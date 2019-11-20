@@ -1,0 +1,99 @@
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8dc63f;
+}
+.wrapper {
+    width: 80%;
+    padding: 25px 15px 0;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.title {
+    float: left;
+}
+h1 {
+    margin: 0;
+    font: normal 22px "Arial";
+    color: #39930d;
+}
+h2 {
+    margin: 12px 0;
+    font: bold 44px Arial;
+    color: #39930d;
+}
+header p {
+    font: italic 14px Arial;
+    color: #5a5a5a;
+}
+header img {
+    float: left;
+    padding-left: 35px;
+}
+.contacts {
+    float: right;
+}
+.contacts a {
+    font: normal 22px Arial;
+    color: #39930d;
+    text-decoration: none;
+}
+.contacts a:hover {
+    text-decoration: underline;
+}
+main {
+    display: inline-block;
+    max-width: 600px;
+    padding-top: 25px;
+}
+main h2 {
+    margin-top: 0;
+    font: bold 24px Arial;
+    color: #39930d;
+}
+main p {
+    margin: 0;
+    padding-bottom: 18px;
+    font: normal 14px/21px Arial;
+    color: #343434;
+}
+aside {
+    padding-top: 25px;
+    width: 300px;
+    float: right;
+}
+aside p {
+    margin: 0;
+    padding: 10px 20px;
+    font: normal 18px Arial;
+    color: #fff;
+    background-color: #39930d;
+}
+ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+aside a {
+    font: normal 14px/30px Arial;
+    color: #39930d;
+    text-transform: uppercase;
+}
+aside a:hover {
+    text-decoration: none;
+}
+footer {
+    padding: 10px 0;
+    margin: 0 -15px;
+    background-color: #39930d;
+    color: #fff;
+    font: normal 14px Arial;
+}
+footer p {
+    margin: 0 0 0 15px;
+}
