@@ -46,6 +46,9 @@ header img {
 .contacts a:hover {
     text-decoration: underline;
 }
+.banner {
+    width: 100%;
+}
 main {
     display: inline-block;
     max-width: 600px;
