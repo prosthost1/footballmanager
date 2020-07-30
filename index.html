@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FootballManager</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper clear">
-      <header class="clear">
-        <div class="title">
-          <h1>Футбольний</h1>
-          <h2>Менеджер</h2>
-          <p>Офіційний сайт</p>
-        </div>
-        <img src="img/ball.png" alt="" class="logo"/>
-        <div class="contacts">
-          <p>
-            <a href="tel:+380975555501">+38 (097) 555-55-01</a>
-          </p>
-          <p>Працюємо 24/7</p>
-        </div>
-      </header>
-      <img src="img/banner.png" alt="" class="banner">
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FootballManager</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+</head>
+
+<body class="light">
+  <div class="mini-game">
+    <input type="range" class="range" id="range" min="1" max="100" value="1" step="1">
+  </div>
+  <div class="wrapper" id="theme">
+    <header class="clear">
+      <div class="title">
+        <h1>Футбольний</h1>
+        <h2>Менеджер</h2>
+        <p>Офіційний сайт</p>
+      </div>
+      <img src="img/ball.png" alt="" class="logo" id="ball"/>
+      <div class="contacts">
+        <p>
+          <a href="tel:+380975555501">+38 (097) 555-55-01</a>
+        </p>
+        <p>Працюємо 24/7</p>
+      </div>
+    </header>
+    <img src="img/banner.png" alt="" class="banner">
+    <div class="clear">
       <main>
         <h2>Про футбол</h2>
         <p>
@@ -55,11 +62,13 @@
           <li><a href="#">доставка їжі на стадіон</a></li>
         </ul>
       </aside>
-      <footer>
-        <p>
-          &copy; Футбольний менеджер 2018.
-        </p>
-      </footer>
     </div>
-  </body>
+    <footer>
+      <p>
+        &copy; Футбольний менеджер 2018.
+      </p>
+    </footer>
+  </div>
+</body>
+
 </html>

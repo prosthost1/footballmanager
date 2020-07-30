@@ -1,103 +1,152 @@
 .clear:after {
-    content: "";
-    display: block;
-    clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #8dc63f;
-    cursor: url(../cursor/cursor.cur), default;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #8dc63f;
+	cursor: url(../cursor/cursor.cur), default;
+}
+.range {
+	position: absolute;
+	left: 50%;
+	top: 350px;
+	transform: translateX(-50%);
+	-webkit-appearance: none;
+	width: 200px;
+	height: 20px;
+	background-image: linear-gradient(to right, red, orange,yellow, green, yellow, orange, red);
+	visibility: hidden;
+}
+.range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 3px;
+	height: 20px;
+	background-color: #000;
+}
+.range:focus {
+  outline: none;
 }
 .wrapper {
-    width: 80%;
-    padding: 25px 15px 0;
-    margin: 0 auto;
-    background-color: #fff;
+	width: 80%;
+	padding: 25px 15px 0;
+	margin: 0 auto;
+	background-color: #fff;
 }
 .title {
-    float: left;
+	float: left;
+	margin-right: 35px;
 }
 h1 {
-    margin: 0;
-    font: normal 22px "Arial";
-    color: #39930d;
+	margin: 0;
+	font: normal 22px "Arial";
+	color: #39930d;
 }
 h2 {
-    margin: 12px 0;
-    font: bold 44px Arial;
-    color: #39930d;
+	margin: 12px 0;
+	font: bold 44px Arial;
+	color: #39930d;
 }
 header p {
-    font: italic 14px Arial;
-    color: #5a5a5a;
+	font: italic 14px Arial;
+	color: #5a5a5a;
 }
 header img {
-    float: left;
-    padding-left: 35px;
+	float: left;
 }
 .contacts {
-    float: right;
+	float: right;
 }
 .contacts a {
-    font: normal 22px Arial;
-    color: #39930d;
-    text-decoration: none;
+	font: normal 22px Arial;
+	color: #39930d;
+	text-decoration: none;
 }
 .contacts a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .banner {
-    width: 100%;
+	width: 100%;
 }
 main {
-    display: inline-block;
-    max-width: 600px;
-    padding-top: 25px;
+	display: inline-block;
+	width: 70%;
+	padding-top: 25px;
 }
 main h2 {
-    margin-top: 0;
-    font: bold 24px Arial;
-    color: #39930d;
+	margin-top: 0;
+	font: bold 24px Arial;
+	color: #39930d;
 }
 main p {
-    margin: 0;
-    padding-bottom: 18px;
-    font: normal 14px/21px Arial;
-    color: #343434;
+	margin: 0;
+	padding-bottom: 18px;
+	font: normal 14px/21px Arial;
+	color: #343434;
 }
 aside {
-    padding-top: 25px;
-    width: 300px;
-    float: right;
+	padding-top: 25px;
+	width: 30%;
+	float: right;
 }
 aside p {
-    margin: 0;
-    padding: 10px 20px;
-    font: normal 18px Arial;
-    color: #fff;
-    background-color: #39930d;
+	margin: 0;
+	padding: 10px 20px;
+	font: normal 18px Arial;
+	color: #fff;
+	background-color: #39930d;
 }
 ul {
-    margin: 0;
-    padding: 20px;
-    list-style: none;
+	margin: 0;
+	padding: 20px;
+	list-style: none;
 }
 aside a {
-    font: normal 14px/30px Arial;
-    color: #39930d;
-    text-transform: uppercase;
+	font: normal 14px/30px Arial;
+	color: #39930d;
+	text-transform: uppercase;
 }
 aside a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 footer {
-    padding: 10px 0;
-    margin: 0 -15px;
-    background-color: #39930d;
-    color: #fff;
-    font: normal 14px Arial;
+	padding: 10px 0;
+	margin: 0 -15px;
+	background-color: #39930d;
+	color: #fff;
+	font: normal 14px Arial;
 }
 footer p {
-    margin: 0 0 0 15px;
+	margin: 0 0 0 15px;
+}
+@media screen and (max-width: 1055px) {
+	main {
+			width: 100%;
+	}
+	aside {
+			width: 100%;
+	}
+}
+@media screen and (max-width: 750px) {
+	.contacts {
+			width: 100%;
+	}
+	header {
+			text-align: center;
+	}
+	.title {
+			width: 100%;
+	}
+	.logo {
+			text-align: center;
+			float: none;
+			padding: 0;
+	}
+	.banner {
+			min-height: 130px;
+			object-fit: cover;
+			object-position: 80%;
+	}
 }
